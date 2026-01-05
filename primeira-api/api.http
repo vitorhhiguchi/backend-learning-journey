@@ -1,0 +1,44 @@
+### MOSTRAR MENSAGEM
+GET http://localhost:3000/hello
+
+### LISTAR SALAS
+GET http://localhost:3000/salas
+
+### Criar uma sala
+POST http://localhost:3000/salas
+Content-Type: application/json
+
+{
+    "nome": "sala dos jagas",
+    "capacidade": 20
+}
+
+### TESTE PARA DAR ERRO NA HORA DE CADASTRO
+POST http://localhost:3000/salas
+Content-Type: application/json
+
+{
+    "nome": "",
+    "capacidade": -10
+}
+
+### TESTE PARA DAR ERRO NA HORA DE CADASTRO
+POST http://localhost:3000/salas
+Content-Type: application/json
+
+{
+    "nome": "Teste",
+    "capacidade": -10
+}
+
+### LISTAR JOGOS
+GET http://localhost:3000/jogos
+
+### CRIAR um jogo
+POST http://localhost:3000/jogos
+Content-Type: application/json
+
+{
+    "nome": "sala dos jagas",
+    "genero": "fps"
+}
