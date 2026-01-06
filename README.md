@@ -16,6 +16,7 @@ O objetivo não é apenas escrever código, mas entender:
 |------|--------|----------|
 | 01 | Primeira API | Rotas, métodos HTTP, JSON |
 | 02 | API Estruturada | Separação de responsabilidades |
+| 03 | Gerenciador de Tarefas (Desafio) | CRUD completo, validações, erros, arquitetura |
 
 ---
 

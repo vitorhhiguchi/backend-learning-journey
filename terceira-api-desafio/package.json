@@ -1,0 +1,17 @@
+{
+  "name": "terceira-api-desafio",
+  "version": "1.0.0",
+  "description": "Um backend para gerenciar tarefas pessoais (to-do list), com foco em boas práticas e regras de negócio.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

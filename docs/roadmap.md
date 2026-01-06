@@ -2,8 +2,10 @@
 
 - [x] Criar primeira API
 - [x] Estruturar projeto
-- [ ] Validações
+- [x] CRUD completo
+- [x] Validações de regra de negócio
+- [x] Tratamento de erros
 - [ ] Banco de dados
 - [ ] Autenticação
-- [ ] Testes
+- [ ] Testes automatizados
 - [ ] Deploy
