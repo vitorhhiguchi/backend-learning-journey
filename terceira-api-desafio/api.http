@@ -1,0 +1,32 @@
+### CRIAR UMA TASK
+POST http://localhost:3000/tasks
+Content-Type: application/json
+
+{
+    "titulo": "Fazer minha API",
+    "descricao": "Estudando",
+    "prioridade": "alta"
+}
+
+### CRIAR UMA TASK ERROR
+POST http://localhost:3000/tasks
+Content-Type: application/json
+
+{
+    "titulo": "Fazer minha API",
+    "descricao": "Estudando",
+    "prioridade": "lixo"
+}
+
+### CRIAR UMA TASK ERROR 2 
+POST http://localhost:3000/tasks
+Content-Type: application/json
+
+{
+    "titulo": "",
+    "descricao": "Estudando",
+    "prioridade": "lixo"
+}
+
+### LISTAR TASKS
+GET http://localhost:3000/tasks
