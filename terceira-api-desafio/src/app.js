@@ -8,5 +8,6 @@ app.use(express.json());
 // Rotas
 app.post('/tasks', tasksController.criar);
 app.get('/tasks', tasksController.listar);
+app.patch('/tasks/:id/concluir', tasksController.marcar);
 
 module.exports = app;

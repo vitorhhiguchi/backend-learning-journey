@@ -31,7 +31,31 @@ function listarTask() {
     return tasks;
 }
 
+function buscarPorID(id){
+    const task = tasks.find(s => s.id === id);
+
+    if(!task) {
+        throw new NotFoundError('Task não encontrada');
+    }
+
+    return task;
+}
+
+
+function marcarTask(id) {
+    const task = buscarPorID(id);
+
+    if(task.concluida) {
+       throw new BadRequestError('Task já concluida!');
+    }
+
+    task.concluida = true;
+
+    return task;
+}
+
 module.exports = {
     criarTask,
-    listarTask
+    listarTask,
+    marcarTask
 };
